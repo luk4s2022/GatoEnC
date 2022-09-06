@@ -16,6 +16,7 @@ int main()
         board();
         player = (player % 2) ? 1 : 2;
 
+        printf("Bienvenido al juego del gato\n");
         printf("Jugador %d, escribe un numero por favor:  ", player);
         scanf("%d", &choice);
 
@@ -65,7 +66,7 @@ int main()
     if (i == 1)
         printf("==>\aJugador %d gana ", --player);
     else
-        printf("==>\aEmpate ");
+        printf("==>\aGato, esto es un empate ");
 
     getch();
 
